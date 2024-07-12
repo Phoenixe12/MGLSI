@@ -1,7 +1,7 @@
 <nav class="navbar">
     <ul>
-        <?php foreach ($categories as $cat) : ?> <!-- Boucle pour afficher les catégories -->
-            <li><a href="index.php?category=<?= $cat['id'] ?>"><?= htmlspecialchars($cat['libelle']) ?></a></li> <!-- Lien vers les articles de chaque catégorie -->
+        <?php foreach ($categories as $cat) : ?>
+            <li><a href="index.php?category=<?= $cat['id'] ?>"><?= htmlspecialchars($cat['libelle']) ?></a></li> 
         <?php endforeach; ?>
     </ul>
 </nav>
